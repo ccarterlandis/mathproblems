@@ -12,23 +12,17 @@ sum *= 400
 list = []
 for x in range(0, 100000):
     list.append(x)
-mid = list[int(len(list)/2)]
-found = 1
+
+found = 0
+count = 0
 
 start_time = time.time()
 
-while (mid != sum):
-    mid = list[int(len(list)/2)]
-    print("Mid is {}.".format(mid))
-    if mid > sum:
-        list = [x for x in list if x <= mid]
-        print("The upper half of list has been removed, and is now {}.\n".format(list))
-    elif mid < sum:
-        list = [x for x in list if x >= mid]
-        print("The lower of list has been removed, and is now {}.\n".format(list))
-    if len(list) == 1:
-        found = 0
+while count != 10000000:
+    if count == sum:
+        found = 1
         break
+    count+=1
 
 if found == 1:
     print("\nYour name, {}, in contained in the set 0 to 100.".format(name))

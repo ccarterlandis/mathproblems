@@ -1,6 +1,5 @@
 import time
 
-
 list = []
 
 end = input("How many Mersenne primes would you like to find? ")
