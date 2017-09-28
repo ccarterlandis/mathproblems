@@ -1,5 +1,6 @@
-import matplotlib.pyplot as plt
 import random
+
+import matplotlib.pyplot as plt
 
 inumfor = []
 inumflip = []
@@ -43,7 +44,7 @@ for i in range(1, 20, 1):
     iforflipped.append(inumflip)
     ibackflipped.append(inumflip[::-1])
 
-plt.subplot(111, axisbg='black')
+plt.subplot(111, facecolor='black')
 
 width = 3
 color1 = (random.random())
