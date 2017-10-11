@@ -22,10 +22,10 @@ while (mid != sum):
     print("Mid is {}.".format(mid))
     if mid > sum:
         list = [x for x in list if x <= mid]
-        print("The upper half of list has been removed, and is now {}.\n".format(list))
+        print("The upper half of the list has been removed, and is now {}.\n".format(list))
     elif mid < sum:
         list = [x for x in list if x >= mid]
-        print("The lower of list has been removed, and is now {}.\n".format(list))
+        print("The lower of the list has been removed, and is now {}.\n".format(list))
     if len(list) == 1:
         found = 0
         break
