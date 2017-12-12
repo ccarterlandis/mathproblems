@@ -63,7 +63,7 @@
 #
 #         return LIST
 
-# # --------MISSING NUMBER--------
+# --------MISSING NUMBER--------
 # def missingNumber(nums):
 #     """
 #     :type nums: List[int]
@@ -79,7 +79,7 @@
 #         if myDict[x] == 0:
 #             return x
 #
-# nums = [1]
+# nums = [0, 1, 2, 3, 4, 5, 7]
 # val = missingNumber(nums)
 # print(val)
 
@@ -178,7 +178,7 @@
 # val = hammingDistance(1, 10000)
 # print(val)
 
-# # --------TOTAL HAMMING DISTANCE--------
+# # # --------TOTAL HAMMING DISTANCE--------
 # def totalhammingDistance(nums):
 #         """
 #         :type x: int
@@ -209,54 +209,54 @@
 # nums = [4, 14, 2]
 # print(totalhammingDistance(nums))
 
-# --------FIND NTH DIGIT--------
-def findNthDigit(n):
-    """
-    :type n: int
-    :rtype: int
-    """
-
-    # total = 0
-    # result = 0
-    # for item in myList:
-    #     for x in str(item):
-    #        print(x)
-    #        total+=1
-    #        if total == n:
-    #            return x
-
-    x = 1
-    total = 0
-    while(1):
-        for item in str(x):
-            total+=1
-            if total == n:
-                return int(item)
-        x+=1
-
-
-
-print(findNthDigit(11))
-
-
-# # --------FIZZ BUZZ--------
-# def fizzBuzz(n):
+# # --------FIND NTH DIGIT--------
+# def findNthDigit(n):
 #     """
 #     :type n: int
-#     :rtype: List[str]
+#     :rtype: int
 #     """
-#     list = []
 #
-#     for x in range(1, n):
-#         if (x % 5 == 0 and x % 3 == 0 and x >= 3 and x >= 5):
-#             list.append("FizzBuzz")
-#         elif (x % 3 == 0 and x >= 3):
-#             list.append("Fizz")
-#         elif (x % 5 == 0 and x >= 5):
-#             list.append("Buzz")
-#         else:
-#             list.append(str(x))
+#     # total = 0
+#     # result = 0
+#     # for item in myList:
+#     #     for x in str(item):
+#     #        print(x)
+#     #        total+=1
+#     #        if total == n:
+#     #            return x
 #
-#     return list
+#     x = 1
+#     total = 0
+#     while(1):
+#         for item in str(x):
+#             total+=1
+#             if total == n:
+#                 return int(item)
+#         x+=1
 #
-# print(fizzBuzz(100))
+#
+#
+# print(findNthDigit(11))
+#
+#
+# --------FIZZ BUZZ--------
+def fizzBuzz(n):
+    """
+    :type n: int
+    :rtype: List[str]
+    """
+    list = []
+
+    for x in range(1, n):
+        if (x % 5 == 0 and x % 3 == 0):
+            list.append("FizzBuzz")
+        elif (x % 3 == 0 ):
+            list.append("Fizz")
+        elif (x % 5 == 0 ):
+            list.append("Buzz")
+        else:
+            list.append(str(x))
+
+    return list
+
+print(fizzBuzz(100))
